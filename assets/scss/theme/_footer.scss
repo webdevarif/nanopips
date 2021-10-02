@@ -1,0 +1,145 @@
+/* Footer area css
+============================================================================================ */
+.footer-area {
+    position: relative;
+    z-index: 0;
+    background: url(../img/bg/footer-bg.png) top center no-repeat;
+    background-size: cover;
+    border-radius: 90px 90px 0 0;
+
+    .footer-top {
+        padding: 120px 0 50px;
+
+        .single-footer-widget {
+            .footer-title {
+                font-size: 24px;
+                color: #fff;
+                margin-bottom: 25px;
+            }
+            ul {
+                li {
+                    margin-bottom: 15px;
+                    a {
+                        color: #fff;
+                        &:hover {
+                            color: #7A0872;
+                        }
+                    }
+                }
+            }
+            .mailchimp {
+                p {
+                    color: #fff;
+                }
+                .form-group {
+                    input {
+                        line-height: 56px;
+                        background: #E9E9EC;
+                        border-radius: 5px;
+                    }
+                    button {
+                        line-height: 56px;
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        padding: 0 35px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+
+        padding: 30px 0;
+        border-top: 1px solid #fff;
+        .footer-left-content {
+            ul {
+                li {
+                    font-size: 14px;
+                    color: #fff;
+                    margin-bottom: 2px;
+                    a {
+                        color: #fff;
+                        &:hover {
+                            color: #7A0872;
+                        }
+                    }
+                }
+            }
+            .footer-logos {
+                margin-top: 20px;
+            }
+        }
+        .footer-right-content {
+            text-align: right;
+            .footer-bottom-menu {
+                margin-bottom: 25px;
+                li {
+                    display: inline-block;
+                    position: relative;
+                    margin-right: 10px;
+                    padding-right: 15px;
+                    &:last-child {
+                        padding-right: 0;
+                        margin-right: 0;
+                        &:before {
+                            display: none;
+                        }
+                    }
+                    &:before {
+                        position: absolute;
+                        right: 0;
+                        top: 30%;
+                        height: 50%;
+                        width: 2px;
+                        content: "";
+                        background: #fff;
+                    }
+                    a {
+                        font-size: 14px;
+                        color: #fff;
+                    }
+                }
+            }
+
+            .footer-social-wrap {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                .footer-site-logo {
+                    margin-right: 15px;
+                    img {
+                        max-width: 100px;
+                    }
+                }
+                .footer-social {
+                    li {
+                        display: inline-block;
+                        margin-right: 10px;
+                        &:last-child {
+                            margin-right: 10px;
+                        }
+                        a {
+                            display: inline-block;
+                            height: 25px;
+                            width: 25px;
+                            line-height: 27px;
+                            text-align: center;
+                            background: #fff;
+                            color: #611259;
+                            border-radius: 50%;
+                            font-size: 12px;
+                            &:hover {
+                                background: $primary-color;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}

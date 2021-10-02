@@ -1,0 +1,73 @@
+
+/* Main Title Area css
+============================================================================================ */
+.section-title {
+    margin-bottom: 50px;
+    h2 {
+        font-size: 50px;
+        font-weight: 700;
+    }
+    p {
+        font-size: 20px;
+    }
+}
+
+
+/* Start Primary btns css
+============================================================================================ */
+.primary-btn {
+    display: inline-block;
+    line-height: 72px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    padding: 0 25px;
+    background: linear-gradient(90deg, var(--c1, $primary-color), var(--c2, $primary-color2) 51%, var(--c1, $primary-color)) var(--x, 0)/ 200%;
+    @include transition();
+    &:hover {
+        --x: 100%;
+        color: #fff;
+    }
+}
+
+/* gradient-bg css
+============================================================================================ */
+.gradient-bg {
+    @include gradient(90deg, $primary-color 0%, $primary-color2 100%);
+}
+
+/* animation delay css
+============================================================================================ */
+.delay-1 {
+    animation-delay: .1s;
+}
+.delay-2 {
+    animation-delay: .2s;
+}
+.delay-3 {
+    animation-delay: .3s;
+}
+.delay-4 {
+    animation-delay: .4s;
+}
+.delay-5 {
+    animation-delay: .5s;
+}
+.delay-6 {
+    animation-delay: .6s;
+}
+.delay-7 {
+    animation-delay: .7s;
+}
+.delay-8 {
+    animation-delay: .8s;
+}
+.delay-9 {
+    animation-delay: .9s;
+}
+.delay-10 {
+    animation-delay: 1s;
+}
+

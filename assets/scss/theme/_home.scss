@@ -1,0 +1,427 @@
+/* features area style
+============================================================================================ */
+
+.features-area {
+    padding: 120px 0 0;
+    .single-features {
+        text-align: center;
+        padding: 0 35px;
+        img {
+            margin-bottom: 20px;
+        }
+        h4 {
+            font-size: 30px;
+            font-weight: 900;
+        }
+        p {
+            font-size: 20px;
+            line-height: 1.5;
+        }
+    }
+}
+
+
+/* trade area style
+============================================================================================ */
+
+.trade-area {
+    padding: 150px 0;
+    position: relative;
+    z-index: 1;
+    .global-shape1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .global-shape2 {
+        position: absolute;
+        bottom: -100px;
+        right: 0;
+        z-index: -1;
+    }
+    .trade-gold-image {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        .global-dots {
+            position: absolute;
+            right: -60px;
+            bottom: -40px;
+            z-index: -1;
+        }
+    }
+    .section-btns-wrap {
+        .section-btns {
+            margin-bottom: 15px;
+            .primary-btn {
+                &.bordered-btn {
+                    border: 1px solid #611259;
+                    background: transparent;
+                    color: $title-color;
+                    margin-left: 25px;
+                    &:hover {
+                        background: $primary-color;
+                        border: 1px solid transparent;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+}
+
+
+/* about area style
+============================================================================================ */
+
+.about-area {
+    position: relative;
+    z-index: 1;
+    &.left-aligned {
+        background: url(../img/bg/about-bg.png) center no-repeat;
+        background-size: cover;
+        padding-top: 80px;
+        .about-thumb {
+            margin-right: -250px;
+            margin-left: 20px;
+        }
+        .about-content {
+            margin-top: 0;
+        }
+    }
+    .about-thumb {
+        margin-left: -250px;
+        margin-right: 20px;
+    }
+    .about-content {
+        margin-top: 90px;
+        h2 {
+            font-size: 50px;
+        }
+        p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+        ul {
+            margin-bottom: 25px;
+            li {
+                margin-bottom: 5px;
+                font-size: 20px;
+            }
+        }
+        .about-btns {
+            .primary-btn {
+                &.bordered-btn {
+                    border: 1px solid #611259;
+                    background: transparent;
+                    color: $title-color;
+                    margin-left: 15px;
+                    &:hover {
+                        background: $primary-color;
+                        border: 1px solid transparent;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* service area style
+============================================================================================ */
+
+.service-area {
+    padding: 120px 0;
+    position: relative;
+    z-index: 1;
+    .global-shape3 {
+        position: absolute;
+        right: 0;
+        bottom: 5%;
+        z-index: -1;
+    }
+    .single-service-item {
+        border: 1px solid #E8E8E8;
+        border-radius: 8px;
+        padding: 40px 30px;
+        @include transition();
+        margin-bottom: 30px;
+        min-height: 440px;
+        background: #fff;
+        .service-icon {
+            margin-bottom: 25px;
+            position: relative;
+            min-height: 80px;
+            img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                @include transition();
+            }
+            .hover-image {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        h3 {
+            font-size: 30px;
+        }
+        .service-desc {
+            margin-bottom: 25px;
+            min-height: 115px;
+            p {
+                font-size: 18px;
+            }
+        }
+        .service-btn {
+            @include transition();
+            &:hover {
+                padding-left: 25px;
+            }
+        }
+        &:hover {
+            border: 1px solid #198E6C;
+            box-shadow: 0 6px 40px #0000000a;
+            .service-icon {
+                .normal-image {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                .hover-image {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}
+
+
+/* works area style
+============================================================================================ */
+
+.works-area {
+    padding: 80px 0;
+    background: url(../img/bg/works-bg.png) center no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    .col-lg-4 {
+        &:nth-child(2) {
+            .single-work-item {
+                margin: 0 auto;
+            }
+        }
+        &:last-child {
+            .single-work-item {
+                margin-left: auto;
+            }
+        }
+    }
+    .global-shape4 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    .works-victor {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    .section-title {
+        text-align: center;
+    }
+    .single-work-item {
+        border-radius: 15px;
+        background: #fff;
+        text-align: center;
+        padding: 40px 25px;
+        width: 335px;
+        .works-icons-wrap {
+            position: relative;
+            z-index: 1;
+            display: inline-block;
+            margin-bottom: 20px;
+            .works-icon {
+                height: 88px;
+                width: 88px;
+                line-height: 88px;
+                @include gradient(180deg, #611259 0%, #8F0087 100%);
+                border-radius: 50%;
+                text-align: center;
+            }
+            span {
+                height: 41px;
+                width: 41px;
+                line-height: 41px;
+                text-align: center;
+                display: inline-block;
+                background: #198E6C;
+                border-radius: 50%;
+                font-size: 24px;
+                font-weight: 900;
+                color: #fff;
+                position: absolute;
+                top: -5px;
+                right: -15px;
+                box-shadow: 0 3px 6px #00000029;
+            }
+        }
+        h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+/* service-list-area style
+============================================================================================ */
+
+.service-list-area {
+    position: relative;
+    z-index: 1;
+    padding: 150px 0;
+    .global-shape5 {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        @include transform(translateY(-50%));
+        z-index: -1;
+    }
+    .service-list-thumb {
+        text-align: center;
+        z-index: -1;
+        position: relative;
+        .green-circle {
+            position: absolute;
+            top: -70px;
+            left: 0;
+            z-index: -2;
+        }
+        .pink-circle {
+            position: absolute;
+            bottom: 26%;
+            right: 4%;
+            z-index: -2;
+        }
+    }
+    .service-list-wrap {
+        margin-top: -120px;
+    }
+    .service-list-item {
+        box-shadow: 0 5px 60px #0000000d;
+        display: flex;
+        align-items: center;
+        border-radius: 12px;
+        min-height: 128px;
+        padding: 20px 15px;
+        margin-bottom: 50px;
+        .service-list-icon {
+            margin-right: 10px;
+            i {
+                color: $primary-color;
+                font-size: 29px;
+            }
+        }
+        .service-list-content {
+            h5 {
+                font-size: 20px;
+                margin-bottom: 5px;
+            }
+            p {
+                font-size: 14px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+
+/* cta area style
+============================================================================================ */
+
+.cta-area {
+    background: url(../img/bg/cta-bg.png) center no-repeat;
+    background-size: cover;
+    padding: 40px 0;
+    .cta-thumb {
+        text-align: center;
+    }
+    .cta-content {
+        h2 {
+            font-size: 50px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #fff;
+            margin-bottom: 30px;
+        }
+        .primary-btn {
+            background: #fff;
+            color: $title-color;
+            &:hover {
+                background: $primary-color;
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+/* site discription area style
+============================================================================================ */
+
+.site-desc-area {
+    padding: 150px 0 30px;
+    position: relative;
+    z-index: 2;
+    .global-shape6 {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        @include transform(translateY(-50%));
+        z-index: -1;
+    }
+    .global-shape7 {
+        position: absolute;
+        left: 0;
+        bottom: -10%;
+        z-index: 1;
+    }
+    .site-desc-title {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .sub-title {
+        font-size: 18px;
+        a {
+            color: $primary-color;
+            font-weight: 700;
+        }
+    }
+    .site-desc-box {
+        margin-bottom: 50px;
+        background: #fff;
+        position: relative;
+        z-index: 3;
+        h4 {
+            font-size: 24px;
+            color: $primary-color;
+            border-bottom: 1px solid #D1D1D1;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+    }
+}
